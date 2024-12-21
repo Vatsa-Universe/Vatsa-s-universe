@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vatsa's Universe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #000000, #004e92);
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #001f3f;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+            background: rgba(0, 78, 146, 0.8);
+            padding: 0.5rem 0;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00aaff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            padding: 3rem;
+            text-align: center;
+            margin: 2rem 10%;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        footer {
+            background: #001f3f;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 2px solid #00aaff;
+        }
+
+        #about h2,
+        #projects h2,
+        #contact h2 {
+            color: #00aaff;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #about p,
+        #projects p,
+        #contact p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project {
+            margin: 1.5rem 0;
+        }
+
+        .project h3 {
+            color: #00aaff;
+            margin-bottom: 0.5rem;
+        }
+
+        .project a {
+            color: #00aaff;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .project a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Vatsa's Universe
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Hello and welcome! I'm Srivatsa Peddinti, a passionate web developer from the vibrant city of Hyderabad.</p>
+        <p>I love creating web apps that solve problems and provide engaging user experiences. This website is a reflection of my work, creativity, and aspirations. Dive into my universe of coding, design, and innovation!</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Card Matching Game</h3>
+            <p>This is My Creation. Click to open it.</p>
+            <a href="http://192.168.6.80:5500/Vatsa/projects/Card%20Matching%20Game/index.html" target="_blank">View Project 1</a>
+        </div>
+
+        <div class="project">
+            <h3>Travia Quest</h3>
+            <p>This is My Another Creation. Click to open it.</p>
+            <a href="http://192.168.6.80:5500/Vatsa/projects/Travia%20Quest/index.html" target="_blank">View Project 2</a>
+        </div>
+
+        <div class="project">
+            <h3>Word Unscramble Game</h3>
+            <p>This is My Another Creation. Click to open it.</p>
+            <a href="http://192.168.6.80:5500/Vatsa/projects/Word%20Unscramble%20Game/index.html" target="_blank">View Project 3</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:srivatsapeddinti@gmail.com?subject=Hello&body=Message%20here">srivatsapeddinti@gmail.com</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/uniquevatsa_4870" target="_blank">@uniquevatsa_4870</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Vatsa Peddinti. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Update footer year dynamically
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Log a welcome message to the console
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Welcome to Vatsa's Universe!");
+        });
+    </script>
+</body>
+</html>
